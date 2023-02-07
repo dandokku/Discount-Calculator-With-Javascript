@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/discount.css">
+    <title>Discount Calculator</title>
+</head>
+<body>
+    <div class="card">
+        <h1>Discount Calculator</h1>
+        <form action="#">
+            <div class="input-item">
+                <label for="amount"> Enter the old price: </label>
+                <input type="text" id="amount" required>
+            </div>
+
+            <div class="input-item">
+                <label for="pay" aria-disabled="true">New Price: </label>
+                <input type="text" id="new-price" required>
+            </div>
+
+            <div class="input-item">
+                <label for="discount-amount"> Discount amount: </label>
+                <input type="text" id="discount-amount" disabled>
+            </div> 
+
+            <div class="input-item">
+                <label for="discount-percentage">Discount Percentage </label>
+                <input type="text" id="discount-percentage" disabled placeholder="%">
+            </div>
+
+            <button type="submit" class="calculate">Calculate Discount</button>
+            <input type="reset" value="Reset" onClick="window.location.reload()" class="reset">
+        </form>
+    </div>
+
+    <script src="./js/discount.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(./fonts/Cairo/Cairo-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: head;
+    src: url(./fonts/Aclonica/Aclonica-Regular.ttf)
+}
+
+@font-face {
+    font-family: body;
+    src: url(./fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: myfont;
+    min-height: 100vh;
+    background: url('/images/slide1.jpeg') no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(rgb(229, 231, 193), rgb(236, 221, 234));
+    color: rgb(168, 228, 208);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    font-family: head;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.25rem;
+    width: 100%;
+    font-family: body;
+    font-weight: bold;
+}
+
+input {
+    margin: 1rem 0;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    border-radius: 10px;
+}
+
+select {
+    margin: 1rem 0;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 3rem;
+    border-radius: 20px;
+}
+
+.input-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: min(500px, 90%);
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+}
+
+.calculate {
+    padding: 0.75rem 0;
+    background: rgb(108, 133, 180);
+    color: white;
+    font-family: body;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    border: none;
+}
+
+.calculate:hover {
+    background: rgb(72, 94, 134);
+}
+
+.reset {
+    padding: 0.75rem 0;
+    background: rgb(100, 237, 157);
+    color: white;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: body;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.reset:hover {
+    background: rgb(78, 187, 123);
+}
+
+@media (max-width: 450px) {
+    .input-item {
+        flex-direction: column;
+    }
+}
